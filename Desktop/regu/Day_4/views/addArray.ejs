@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        This is my array code
+
+        <%= friends%>
+        <% for(var i =0; i<friends.length;i++){%>
+            <ul>
+                <li><%= friends[i]%></li>
+            </ul>
+            <%}%>
+
+            <form action="/addForm" method="post">
+                <input type="text" name="t1">
+                <input type="submit" value="add">
+
+            </form>
+    </body>
+</html>
